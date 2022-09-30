@@ -14,11 +14,23 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
 }
+
+.author {
+    padding-bottom: 40px;
+}
+
 .display-5{
     font-family: 'Lora', serif;
     font-size: 25px;
 }
 
+.procedure{
+    background-color:#e3ebf9 !important;
+}
+
+.list-group-item{
+    background-color: #e3ebf9;
+}
 #horizline{
     color: blue;
 }
@@ -118,6 +130,11 @@ h1#ovPadRight{
 
 p#ovPadRight{
     padding-right: 20px;
+}
+
+#proceduresteps{
+    font-family: 'Lora', serif;
+    font-size: 23px;
 }
 /*------------- Underline Animation CSS ----------- */
 .hover-underline-animation {
