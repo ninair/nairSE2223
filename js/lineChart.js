@@ -18,6 +18,8 @@ async function getData(){
         const day = columns[0];        // assign year value
         xDays.push(day);              // Push year value into array xYears
 
+        console.log('pushed data');
+
         const cpdiameter = parseFloat(columns[1]);        // diameter of anitbacterial zones
         yConeflowerPre.push(cpdiameter);              //push diameter value into array ConeflowerPre
 
@@ -42,8 +44,6 @@ async function createChart(){
     // Configured for chart.JS 3.x and above
 
 const ctx = document.getElementById('myChart');
-
-const degSymbol = String.fromCharCode(176);
 
 const myChart = new Chart(ctx, {
     type: 'line',
