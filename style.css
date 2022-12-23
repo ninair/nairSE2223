@@ -87,9 +87,8 @@ h2.procedure-description{
 
 .nav-link{
     color:rgb(170, 229, 230) !important;
-    font-size: 30px !important;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-size: 25px !important;
+    font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;
     margin-right: 30px !important;
     
@@ -104,7 +103,13 @@ h1{
     font-weight: bold;
 }
 
+nav img{
+    padding-right: 0px;
+}
 
+#nbMenuItem {
+    font-size: 18px !important;
+}
 /*------------- Id CSS ----------- */
 a#nbMenuItem{
     font-size: 25px;
@@ -136,6 +141,14 @@ p#ovPadRight{
     font-family: 'Lora', serif;
     font-size: 23px;
 }
+
+a#userLink{
+    font-size: 18px!important;
+}
+
+#signOut{
+    font-size: 18px!important;
+}
 /*------------- Underline Animation CSS ----------- */
 .hover-underline-animation {
     display: inline-block;
@@ -151,7 +164,134 @@ p#ovPadRight{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #77afb6;
+    background-color: #ffffff;
+    /*transform-origin: bottom right;*/
+    transition: transform 0.35s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    /*transform-origin: bottom left;*/
+}
+
+table th{
+    /*Keep column headers at the top as table is scrolled*/
+    position: sticky;
+    top: 0px; /* https://www.w3schools.com/cssref/pr_pos_top.php*/
+    overflow-y: auto;
+
+}
+
+/* ----------------- Class CSS ----------------- */
+.dataForm{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.days{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headerBG{
+    background-color: #e6e6e6;
+}
+
+.footerBG{
+    background-color: #e6e6e6;
+}
+
+.ordered-List-item-font{
+    font-size:22px;
+}
+.overview-font{
+    font-size:25px;
+}
+
+.signUpForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temps-table{
+    max-height: 250px;  /*prevent table from stretching to bottom of screen*/
+    overflow: auto;
+}
+
+.temps{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nbMenuItem{
+    font-size:25px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.notes{
+    font-size:20px;
+}
+
+
+/* ----------------- ID CSS ----------------- */
+h2#signInTitle{
+    font-family: 'Montserrat'!important;
+    font-weight: bold;
+}
+
+button#signIn:hover{
+    background-color: #326e6e;
+    color: white;
+}
+
+button#signIn{
+    border-color: #326e6e;
+    color:#326e6e;
+}
+
+#keepLoggedInSwitch:checked{
+    background-color: #326e6e;
+}
+
+button#submitData{
+    border-color: #326e6e;
+    color: #326e6e;
+}
+
+button#submitData:hover{
+    background-color: #326e6e;
+    color: white;
+}
+
+#set{
+  border-color: #326e6e;
+  color: #326e6e;
+}
+
+#set:hover{
+    background-color: #326e6e;
+    color: white;
+}
+
+/* -----------------Underline Animation CSS -----------------*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /*color: #0087ca;*/
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
